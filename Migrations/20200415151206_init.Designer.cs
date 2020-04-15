@@ -10,7 +10,7 @@ using dot_net_orm.Models;
 namespace dotnetorm.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20200415133459_init")]
+    [Migration("20200415151206_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

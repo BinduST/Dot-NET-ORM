@@ -26,7 +26,7 @@ namespace dot_net_orm
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddEntityFrameworkNpgsql().AddDbContext<Context>(options =>
+            services.AddDbContext<Context>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
         }
 
