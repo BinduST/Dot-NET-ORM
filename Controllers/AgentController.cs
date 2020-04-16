@@ -4,17 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using dot_net_orm.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace dot_net_orm.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
-    public class AgentController : Controller
+    public class AgentController : ControllerBase
     {
         private readonly Context _context;
+        private readonly ILogger<AgentController> _logger;
 
-        public AgentController(Context context)
+        public AgentController(Context context, ILogger<AgentController> logger)
         {
             _context = context;
+            _logger = logger;
         }
         // GET api/agent
         [HttpGet]

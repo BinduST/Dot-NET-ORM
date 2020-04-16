@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace dotnetorm.Migrations
+namespace dot_net_orm.Migrations
 {
     public partial class init : Migration
     {
