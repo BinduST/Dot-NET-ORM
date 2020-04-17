@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dot_net_orm.Models;
+using dot_net_orm.EntityFramWork.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace dot_net_orm.Controllers
+namespace dot_net_orm.EntityFramWork.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
