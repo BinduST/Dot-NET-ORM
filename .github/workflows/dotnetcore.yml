@@ -19,11 +19,11 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      command: cd EntityFrameWork
+      run: cd EntityFrameWork
       run: dotnet restore
     - name: Build
-      command: cd EntityFrameWork
+      run: cd EntityFrameWork
       run: dotnet build --configuration Release --no-restore
     - name: Test
-      command: cd EntityFrameWork
+      run: cd EntityFrameWork
       run: dotnet test --no-restore --verbosity normal
