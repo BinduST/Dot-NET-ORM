@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>dot_net_orm</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
