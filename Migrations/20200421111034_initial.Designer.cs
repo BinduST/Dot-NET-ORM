@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using dot_net_orm.EntityFramWork.Models;
 
-namespace entityframework.Migrations
+namespace dotnetorm.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20200417054948_init")]
-    partial class init
+    [Migration("20200421111034_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
