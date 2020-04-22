@@ -33,9 +33,9 @@ namespace dot_net_orm.EntityFramWork.Controllers
 
         // POST api/agent
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Agent agent)
         {
-            _context.Agent.Add(new Agent());
+            _context.Agent.Add(agent);
             _context.SaveChanges();
         }
     }
